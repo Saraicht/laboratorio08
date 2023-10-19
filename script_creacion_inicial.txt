@@ -1,0 +1,11 @@
+create database ventas;
+use ventas;
+CREATE TABLE productos (
+    id int AUTO_INCREMENT PRIMARY KEY,
+    Nombre varchar(100),
+    Precio decimal(10,2),
+    Cantidad int,
+    Categoria varchar(50),
+    Celular varchar(9),
+    Imagen longblob
+);

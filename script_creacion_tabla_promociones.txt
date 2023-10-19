@@ -1,0 +1,9 @@
+CREATE TABLE promociones (
+    id INT NOT NULL AUTO_INCREMENT,
+    promocion VARCHAR(200) DEFAULT NULL,
+    duracion VARCHAR(200) DEFAULT NULL,
+    id_productos INT NOT NULL,
+    PRIMARY KEY (id),
+    KEY fk_promociones_1_idx (id_productos),
+    CONSTRAINT fk_promociones_1 FOREIGN KEY (id_productos) REFERENCES productos (id)
+);
